@@ -62,11 +62,17 @@ body {
     color: white;
 }
 
+.btn-wide{
+    width: 200px;
+}
+
 .service-box {
     margin-top: 30px;
     margin-right: 10px;
     margin-left: 10px;
 }
+
+
 
 .page-container{
     background-color: #4CB5F5;
@@ -75,14 +81,17 @@ body {
 
 .container-how-it-works{
     background-color: #3379A3;
-    padding-bottom: 200px;
+    padding-bottom: 80px;
     padding-top: 30px;
     height: 100%;
 }
 
-.footer-container{
+.container-footer{
     background-color: #545454;
-    height: 110px;
+}
+
+.footer{
+    position: fixed;
 }
 
 .navbar .divider-vertical {
