@@ -321,6 +321,17 @@ a.dropdown-toggle {
     background-color: rgb(164,186,000);
 }
 
+.panel-primary .panel-heading {
+    color:white;
+    border-color: #3379A3;
+    background-color: #3379A3;
+}
+
+.panel-primary {
+    color: #3379A3;
+    border-color: #3379A3;
+}
+
 
 .btn-success:hover,
 .btn-success:focus {
