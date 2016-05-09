@@ -310,6 +310,18 @@ a.dropdown-toggle {
     border: none;
 }
 
+.panel-success {
+    color: rgb(164,186,000);
+    border-color: rgb(164,186,000);
+}
+
+.panel-success .panel-heading {
+    color:white;
+    border-color: rgb(164,186,000);
+    background-color: rgb(164,186,000);
+}
+
+
 .btn-success:hover,
 .btn-success:focus {
     background-color: #778100;
