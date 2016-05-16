@@ -56,6 +56,11 @@ body {
     align-items: center;
 }
 
+.founder-pic {
+    max-height: 150px;
+    max-width: 150px;
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
@@ -63,9 +68,9 @@ body {
 }
 
 .navbar{
-    margin:0px;
-    border:0px;
-    border-radius:0px;
+    margin:0;
+    border:0;
+    border-radius:0;
 }
 
 .btn-light-blue{
@@ -388,7 +393,7 @@ a.dropdown-toggle {
 }
 
 .bs-callout {
-    padding: 0px;
+    padding: 0;
     margin: 5px 0;
     border: 1px solid #eee;
     border-left-width: 5px;
