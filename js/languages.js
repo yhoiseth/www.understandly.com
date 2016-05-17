@@ -567,6 +567,7 @@ $(document).ready(function () {
                return languagePair;
            }
         });
+
         console.log(targetLanguagesPairs);
 
         var targetLanguages;
