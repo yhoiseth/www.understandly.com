@@ -546,6 +546,16 @@ $(document).ready(function () {
     "unit_type": "word"
   }, {"language": "Chinese (Simplified)", "lc": "zh", "localized_name": "中文 (简体)", "unit_type": "character"}];
 
+  function compare(a, b) {
+    if (a.language < b.language) {
+      return -1;
+    } else if (a.language > b.language) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+
   languages = languages.filter(function (language) {
     language.targetLanguagePairs = languagePairs.filter(function (languagePair) {
       if (language.lc === languagePair.lc_src && languagePair.tier === 'pro') {
@@ -558,19 +568,24 @@ $(document).ready(function () {
     }
   });
 
-  var sourceLanguagesOptions = '<option disabled selected value="">Source language</option>';
+  languages.sort(compare);
+
+  var sourceLanguagesOptions = '';
 
   $.each(languages, function (index, language) {
-    sourceLanguagesOptions = sourceLanguagesOptions + "<option value='" + language.lc + "'>" + language.language + "</option>";
+    sourceLanguagesOptions = sourceLanguagesOptions + "<option";
+
+    if (language.lc === 'en') {
+      sourceLanguagesOptions+= ' selected';
+    }
+
+    sourceLanguagesOptions = sourceLanguagesOptions + " value='" + language.lc + "'>" + language.language + "</option>";
   });
 
   var languagePairsSelect = $("#languagePairsSelect");
   languagePairsSelect.html(sourceLanguagesOptions);
 
-  languagePairsSelect.change(function () {
-
-    var sourceLanguageCode = languagePairsSelect.val();
-
+  var populateTargetLanguagesDivs = function(sourceLanguageCode) {
     var sourceLanguage = languages.filter(function (language) {
       if (sourceLanguageCode == language.lc) {
         return language;
@@ -592,6 +607,7 @@ $(document).ready(function () {
     });
 
     targetLanguages = targetLanguages.filter(Boolean);
+    targetLanguages = targetLanguages.sort(compare);
 
     var targetLanguagesDivs = '';
 
@@ -603,5 +619,14 @@ $(document).ready(function () {
     });
 
     $('#languages').html(targetLanguagesDivs);
+  };
+
+  populateTargetLanguagesDivs('en');
+
+  languagePairsSelect.change(function () {
+
+    var sourceLanguageCode = languagePairsSelect.val();
+
+    populateTargetLanguagesDivs(sourceLanguageCode);
   });
 });
