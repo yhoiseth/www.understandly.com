@@ -1182,16 +1182,20 @@ $(document).ready(function () {
       }
     });
 
+    return language;
+  });
+
+  languages.sort(compare);
+
+  var sourceLanguages = languages.filter(function (language) {
     if (language.targetLanguagePairs.length > 0) {
       return language;
     }
   });
 
-  languages.sort(compare);
-
   var sourceLanguagesOptions = '';
 
-  $.each(languages, function (index, language) {
+  $.each(sourceLanguages, function (index, language) {
     sourceLanguagesOptions = sourceLanguagesOptions + "<option";
 
     if (language.lc === 'en') {
