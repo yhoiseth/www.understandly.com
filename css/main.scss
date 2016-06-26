@@ -87,8 +87,14 @@ body {
     width: 200px;
 }
 
-.service-box {
+.service-box-bullet-points {
     margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.service-box-bullet-points {
+    margin-top: 10px;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -125,8 +131,12 @@ body {
 }
 
 .container-quality{
-    padding-bottom: 80px;
-    padding-top: 50px;
+     padding-bottom: 80px;
+     padding-top: 50px;
+     height: 100%;
+ }
+
+.container-bullet-points{
     height: 100%;
 }
 
