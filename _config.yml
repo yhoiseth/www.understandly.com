@@ -6,16 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Business translation with integrated content management and collaboration features | Understandly
+title: Business translation tool with content management | Understandly
 email: hi@understandly.com
 description: > # this means to ignore newlines until "baseurl:"
-    Marketing translation and localization tool.
-    High quality professional human translations.
-    Translation software.
-    Translation content management system.
-    Organize translated content.
-    Collaborate with your team and translators.
-    Connect your own translators.
+   Create better local content using our platform with integrated content management and collaboration features.
+   Professional translations in less than 90 minutes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://understandly.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
