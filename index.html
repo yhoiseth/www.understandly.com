@@ -1,23 +1,185 @@
 ---
 layout: default
+title: Business translation tool with content management | Understandly
+description: Create better local content using our platform with integrated content management and collaboration features. Professional translations in less than 90 minutes.
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container-fluid">
+  <div class="row page-container">
+    <div class="col-sm-7 col-md-6 col-lg-5 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 padding-top-80px padding-bottom-70px">
+      <h1 class="text-white">Your professional business translation tool.
+        <br>
+        <a href="https://app.understandly.com/signup" type="button" class="btn btn-lg margin-top-40px btn-success btn-wide" onclick="dataLayer.push({'event': 'buttonCreateFreeAccount-click'});">Create free account</a>
+      </h1>
+    </div>
+  </div>
+  <div class="row container-bullet-points">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="service-box">
+            <div class="col-sm-4 ">
+              <h5><i class="fa fa-circle fa-fw"></i>Professional translations</h5>
+              <h5><i class="fa fa-circle fa-fw"></i>Instant quote for 36 languages</h5>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="col-sm-4">
+              <h5><i class="fa fa-circle fa-fw"></i>Average turnaround < 90 minutes</h5>
+              <h5><i class="fa fa-circle fa-fw"></i>Integrated content management</h5>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="col-sm-4">
+              <h5><i class="fa fa-circle fa-fw"></i>Connect your own translators</h5>
+              <h5><i class="fa fa-circle fa-fw"></i>Collaborate with your team</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row container-intro">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="col-sm-10 col-sm-offset-1">
+          <h2 align="center">Stop wasting time and money using out of date spreadsheets and lengthy email threads,
+            worrying about losing text or translating the same content twice.</h2>
+        </div>
+        <h4 class="col-sm-offset-1 col-sm-11 col-md-10 col-lg-8 padding-top-20px">
+          Work smarter and create better local content using our platform with integrated content management and
+          collaboration features.
+          Understandly was created to help your business
+          do marketing, sales and advertising in multiple languages.
+        </h4>
+        <div class="col-sm-11 col-sm-offset-1 padding-top-10px">
+          <div>
+            <div class="inline-icon">
+              <i class="fa fa-check fa-2x icon-green pull-left"></i>
+              <p class="lead"><strong>Digital marketing:</strong> Facebook Ads, Adwords, Display, Copywriting
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="inline-icon">
+              <i class="fa fa-check fa-2x icon-green pull-left"></i>
+              <p class="lead"><strong>Social media:</strong> Instagram posts, Facebook posts, Tweets, Blog posts
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="inline-icon">
+              <i class="fa fa-check fa-2x icon-green pull-left"></i>
+              <p class="lead"><strong>Advertising:</strong> Static advertising copy, Product descriptions, Promotional
+                emails</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row container-how-it-works text-white">
+    <div class="container">
+      <div class="col-sm-12">
+        <h2 align="center" class="text-white">How it works</h2>
+      </div>
+      <div class="col-sm-12 padding-top-40px">
+        <div class="row">
+          <div class="service-box text-center">
+            <div class="col-sm-4">
+              <i class="fa fa-users fa-5x"></i>
+              <h3>Order</h3>
+              <p>Order professional high quality translations from our network of translators or connect your own translators using our intuitive
+                dashboard.</p>
+            </div>
+          </div>
+          <div class="service-box text-center">
+            <div class="col-sm-4">
+              <i class="fa fa-comments fa-5x"></i>
+              <h3>Translate and collaborate</h3>
+              <p> Track progress for your translations and collaborate with your team. Average turnaround time is less
+                than 90 minutes.</p>
+            </div>
+          </div>
+          <div class="service-box text-center">
+            <div class="col-sm-4">
+              <i class="fa fa-database fa-5x"></i>
+              <h3>Accessible & Organized</h3>
+              <p>All your translated content organized and easily accessible for everyone in your team using our
+                integrated content management system.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div align="center" class="col-sm-12">
+        <a href="https://app.understandly.com/signup" type="button" class="btn btn-lg margin-top-40px btn-success btn-wide">Create free account</a>
+      </div>
+    </div>
+  </div>
+  <div class="row container-languages">
+    <div class="container">
+      <div class="col-sm-12">
+        <h2 align="center">Available languages</h2>
+      </div>
+      <div class="col-sm-12 padding-top-40px">
+        <div class="row">
+          <div align="center" class="col-sm-12">
+            <h4>Translate from</h4>
+            <div class="input-group amount-input">
+              <div class="form-group">
+                <select title="Languages" class="form-control" id="languagePairsSelect"></select>
+              </div>
+            </div>
+          </div>
+          <div align="center" class="col-sm-12 padding-top-20px">
+            <i class="fa fa-long-arrow-down fa-2x"></i>
+            <h4 class="padding-top-10px">To</h4>
+          </div>
+        </div>
+        <div class="row padding-top-10px" id="languages"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row container-quality">
+    <div class="container">
+      <div class="col-sm-12 padding-top-20px">
+        <h2 align="center">Quality</h2>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1">
+        <h4 align="center">
+          Localization of marketing and sales content requires high quality translations. To ensure
+          that your campaign works effectively in other languages we only use native speakers with
+          an understanding of the local culture. Understandly have partnered with Gengo, a world class network of translators.
+          We only use their highest rated translators on our platform.
+        </h4>
+      </div>
+      <div class="col-sm-12 padding-top-20px">
+        <div class="row">
+          <div class="service-box text-center">
+            <div class="col-sm-4">
+              <i class="fa fa-pencil fa-5x"></i>
+              <h3>Testing</h3>
+              <p>The translators we use have to undergo a strict multi stage testing process.</p>
+            </div>
+          </div>
+          <div class="service-box text-center">
+            <div class="col-sm-4">
+              <i class="fa fa-search fa-5x"></i>
+              <h3>Review</h3>
+              <p>Translators work is regularly checked and reviewed by senior translators.</p>
+            </div>
+          </div>
+          <div class="service-box text-center">
+            <div class="col-sm-4">
+              <i class="fa fa-check fa-5x"></i>
+              <h3>Consistent quality</h3>
+              <p>Translators are scored based on an objective checking system, allowing us to deliver consistent and
+                high quality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+

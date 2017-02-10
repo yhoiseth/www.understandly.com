@@ -6,16 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Business translation tool with content management | Understandly
+email: hi@understandly.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+   Create better local content using our platform with integrated content management and collaboration features.
+   Professional translations in less than 90 minutes.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://understandly.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+gems:
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
